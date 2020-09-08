@@ -14,7 +14,6 @@ function proctoringlti(M,filename){
 
 		function hideSubmit() {
 			if (filename=='startattempt.php') {
-				document.getElementById('id_passwordheader').style.display = 'block';
                 document.getElementById('id_submitbutton').style.display = 'block';
                 document.getElementById('id_cancel').style.display = 'block';
 			}else{
@@ -29,11 +28,6 @@ function proctoringlti(M,filename){
 	              if(document.getElementById('passwordheader')) {
 	                document.getElementById('passwordheader').style.display = 'none';
 	              }
-	              if(document.getElementById('id_passwordheader')) {
-		        document.getElementById('id_passwordheader').style.display = 'none';
-		  }
-		  document.getElementById('fitem_id_proctoring_verificientlti').firstElementChild.style.display='none';
-          document.getElementById('fitem_id_proctoring_verificientmessage').firstElementChild.style.display='none';
 		}
 
         var err = document.getElementsByClassName('error');
